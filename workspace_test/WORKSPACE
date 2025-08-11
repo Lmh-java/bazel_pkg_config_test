@@ -1,0 +1,16 @@
+workspace(name = "workspace_test")
+
+load("@bazel_tools//tools/build_defs/repo:git.bzl", "git_repository")
+
+git_repository(
+    name = "bazel_pkg_config",
+    remote = "https://github.com/Lmh-java/bazel_pkg_config.git",
+    commit = "70416c613a0a3e5bd2fd538d92ec63e40ec3278b",
+)
+
+load("@bazel_pkg_config//:pkg_config.bzl", "pkg_config_repository")
+
+pkg_config_repository(
+    name = "glib",
+    pkg_name = "glib-2.0",
+)
