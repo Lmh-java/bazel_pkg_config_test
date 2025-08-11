@@ -1,0 +1,9 @@
+# All bazel generated files
+bazel-*
+
+# Vscode config
+.vscode
+
+# Idea config
+.idea
+
