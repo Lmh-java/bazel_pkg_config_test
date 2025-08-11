@@ -1,5 +1,6 @@
 # All bazel generated files
 bazel-*
+MODULE.bazel.lock
 
 # Vscode config
 .vscode
